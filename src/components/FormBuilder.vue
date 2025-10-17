@@ -1,15 +1,15 @@
 <template>
   <div class="form-builder max-w-6xl mx-auto p-6">
     <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-      <div class="flex justify-between items-center mb-6">
-        <div>
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
+        <div class="flex flex-col">
           <h1 class="text-3xl font-bold text-gray-800">Form Builder</h1>
           <p class="text-gray-600 mt-1">Design your form by adding and configuring fields</p>
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <button
             @click="exportSchema"
-            class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2"
+            class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -18,7 +18,7 @@
           </button>
           <button
             @click="showImportModal = true"
-            class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors flex items-center gap-2"
+            class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center gap-2"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />

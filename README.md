@@ -6,7 +6,7 @@ A modern, dynamic form builder and renderer built with Vue 3, TypeScript, Tailwi
 
 ### Form Builder
 - **Drag & Drop Interface**: Reorder form fields easily with intuitive drag-and-drop
-- **Multiple Field Types**: Text, Number, Radio, Date and Select inputs
+- **Multiple Field Types**: Text, Number, Radio, Date, and Select inputs
 - **Comprehensive Configuration**: 
   - Field labels, placeholders, and descriptions
   - Validation rules (required, min/max length, numeric constraints)
@@ -20,6 +20,7 @@ A modern, dynamic form builder and renderer built with Vue 3, TypeScript, Tailwi
 - **Smart Validation**: Client-side validation with user-friendly error messages
 - **Conditional Logic**: Fields show/hide based on visibility rules
 - **Beautiful UI**: Modern design with smooth animations and transitions
+- **Enhanced Date Picker**: Professional calendar interface with consistent cross-browser experience
 - **Responsive**: Works perfectly on all device sizes
 - **Secure**: Schema is encoded to prevent easy inspection via HTML
 
@@ -143,7 +144,8 @@ The provided schema was well-designed. Enhancements made:
 - **Build Tool**: Vite
 - **State Management**: Pinia
 - **Routing**: Vue Router
-- **Drag & Drop**: vue-draggable-next
+- **Drag & Drop**: vuedraggable
+- **Date Picker**: @vuepic/vue-datepicker
 - **Deployment**: Ready for Vercel, Netlify, Cloudflare Pages, etc.
 
 ## ⚙️ Vite Configuration
@@ -195,6 +197,14 @@ Supported visibility conditions:
    - Dropdown interface
    - Placeholder option
    - Keyboard navigation
+
+5. **Date Input**
+   - Modern calendar picker interface
+   - Beautiful, cross-browser consistent UI
+   - Click to open/close calendar
+   - Auto-apply date selection
+   - Keyboard navigation support
+   - Custom styling matching form theme
 
 ## 🤖 AI Usage
 
