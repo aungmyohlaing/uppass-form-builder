@@ -10,13 +10,15 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
+  base: './', // ✅ Add this line to fix missing CSS/JS on Vercel
+
   build: {
     target: 'esnext',
     minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
-          'vendor': ['vue', 'pinia', 'vue-router'],
+          vendor: ['vue', 'pinia', 'vue-router'],
         },
       },
     },
@@ -27,4 +29,3 @@ export default defineConfig({
     include: ['vue', 'pinia', 'vue-router'],
   },
 })
-
